@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const SpaceXLogo = (route) => (
-    <div className="logo" onClick={route.route}>
+    <div className="logo" onClick={()=>route.route('home')}>
             <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50">
                 <title>SpaceX Logo</title>
                 <g className="letter_s">

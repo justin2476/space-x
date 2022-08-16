@@ -1,40 +1,35 @@
 import './Header.css';
+import React, {useState} from 'react';
 import SpaceXLogo from '../space-x/Logo';
 import { useNavigate } from "react-router-dom";
 
-
-
 function Header() {
+  const [active,setActive]=useState("home")
+  const activeNav = (id) => {
+    if (id === active) {
+      return "active";
+    } else {
+      return "";
+    }
+  };
     let navigate = useNavigate(); 
-    const routeHome = () =>{ 
-      let path = `home`; 
+    const routePath = (path) =>{ 
+      setActive(path)
       navigate(path);
     }
-    const routeDragon = () =>{ 
-        let path = `dragon`; 
-        navigate(path);
-      }
-    const routeJoke = () =>{ 
-      let path = `joke`; 
-      navigate(path);
-    }
-    
-    const routeFalcon = () =>{ 
-        let path = `falcon`; 
-        navigate(path);
-      }
+ 
+     
   return (
 <div>
     
     <ul className="header">
-    <SpaceXLogo route={routeHome}/>
-      <li className="tabs" onClick={routeHome} ><button className="active" >Home</button></li>
-      <li className="tabs" onClick={routeDragon}><button >Dragon</button></li>
-      <li className="tabs" onClick={routeFalcon}><button>Falcon</button></li>
-      <li className="tabs" onClick={routeJoke}><button>Jokes</button></li>
+    <SpaceXLogo route={routePath}/>
+      <li className="tabs" onClick={()=>routePath('home')} ><button className={activeNav('home')} >Home</button></li>
+      <li className="tabs" onClick={()=>routePath('dragon')}><button className={activeNav('dragon')}>Dragon</button></li>
+      <li className="tabs" onClick={()=>routePath('falcon')}><button className={activeNav('falcon')}>Falcon</button></li>
+      <li className="tabs" onClick={()=>routePath('joke')}><button className={activeNav('joke')}>Jokes</button></li>
   </ul>
   </div>
-
 
   );
 }
