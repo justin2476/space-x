@@ -1,0 +1,101 @@
+.u-section-1 {
+    background-image: none;
+    background-color: black;
+    min-height: 100vh;
+  }
+  
+  .u-section-1 .u-text-1-j {
+    background-image: none;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 90px calc(((100% - 1140px) / 2) + 461px) 0 calc(((100% - 1140px) / 2) + -100px);
+  }
+  
+  .u-section-1 .u-image-1-j{
+    width: 638px;
+    height: 534px;
+    margin: -71px 70px 0 auto;
+  }
+  
+  .u-section-1 .u-text-2-j {
+    margin: -422px calc(((100% - 1140px) / 2) + 588px) 0 calc(((100% - 1140px) / 2) + -100px);
+  }
+  
+  .u-section-1 .u-btn-1-j {
+    background-image: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-style: none;
+    font-weight: 700;
+    margin: 85px auto 60px calc(((100% - 1140px) / 2) + -100px);
+    padding: 16px 46px 17px;
+  }
+  
+  @media (max-width: 1500px) {
+    .u-section-1 .u-text-1-j {
+      margin: 90px calc(((100% - 1140px) / 2) + 461px) 0 calc(((100% - 1140px) / 2) );
+    }
+    .u-section-1 .u-text-2-j {
+      margin: -422px calc(((100% - 1140px) / 2) + 588px) 0 calc(((100% - 1140px) / 2) );
+    }
+    .u-section-1 .u-btn-1-j {
+      margin: 85px auto 60px calc(((100% - 1140px) / 2) );
+    
+    }
+  }
+  
+  @media (max-width: 1350px) {
+    .u-section-1 .u-text-1-j {
+      margin: 90px calc(((100% - 1140px) / 2) + 461px) 0 0;
+    }
+    .u-section-1 .u-text-2-j {
+      margin: -422px calc(((100% - 1140px) / 2) + 588px) 0 0;
+    }
+    .u-section-1 .u-btn-1-j {
+      margin: 85px auto 60px 0;
+    
+    }
+    .u-section-1 .u-image-1-j {
+      margin: -71px 0 0 auto;
+    }
+
+  }
+  
+  @media (max-width: 1175px) {
+    .u-section-1 .u-text-1-j {
+      margin: 0 0 0 100px;
+    }
+    .u-section-1 .u-text-2-j {
+      margin: 50px 0 0 100px;
+    }
+    .u-section-1 .u-btn-1-j {
+      margin: 50px 0 50px 100px;
+    
+    }
+    .u-section-1 .u-image-1-j {
+      margin: 100px;
+    }
+    .flex { display: flex; flex-direction: column; }
+.A { order: 2; }
+.B { order: 1; }
+.C { order: 3; }
+.D { order: 4; }
+
+  }
+  
+  @media (max-width: 770px) {
+    .u-section-1 .u-text-1-j {
+      margin: 0 0 0 30px;
+    }
+    .u-section-1 .u-text-2-j {
+      margin: 50px 0 0 30px;
+    }
+    .u-section-1 .u-btn-1-j {
+      margin: 50px 0 50px 30px;
+    
+    }
+    .u-section-1 .u-image-1-j {
+      margin: 0px 0 100px 0;
+    }
+  }
