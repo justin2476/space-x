@@ -21,7 +21,13 @@
   .u-section-1 .u-text-2-j {
     margin: -422px calc(((100% - 1140px) / 2) + 588px) 0 calc(((100% - 1140px) / 2) + -100px);
   }
+  .C{
+    width: 40%;
+  }
   
+  .B{
+    width: 50%;
+  }
   .u-section-1 .u-btn-1-j {
     background-image: none;
     text-transform: uppercase;

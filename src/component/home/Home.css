@@ -94,10 +94,7 @@
   }
 
   .u-section-1 .u-image-2 {
-    width: 720px;
-    height: 480px;
-    margin-top: -859px;
-    margin-left: 0;
+   display: none;
   }
 }
 
