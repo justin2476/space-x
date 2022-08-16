@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <section className="u-black u-clearfix u-section-1" id="carousel_0bd9">
     <div className="u-clearfix u-sheet u-sheet-1">
-      <img className="u-image u-image-1" src={image&&image[0]} alt="spacex " width="1280" height="852"/>
-      <img className="u-image u-image-2" src={image&&image[2]} alt="spacex  2" width="1280" height="853"/>
-      <img className="u-image u-image-3" src={image&&image[3]} alt="spacex  3" width="853" height="1280"/>
+      <img className="u-image u-image-1" src={image&&image[0]} alt="spacex " />
+      <img className="u-image u-image-2" src={image&&image[2]} alt="spacex  2" />
+      <img className="u-image u-image-3" src={image&&image[3]} alt="spacex  3" />
       <div className="u-align-left u-container-style u-grey-60 u-group u-group-1">
         <div className="u-container-layout u-valign-middle u-container-layout-1">
           <h2 className="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1"> Future technology</h2>
