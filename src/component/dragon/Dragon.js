@@ -9,7 +9,6 @@ export default function Dragon() {
         var data = await SpacexApi.getDragon();
    
        setInfo(data.data);
-       console.log(info);
 
       }
     useEffect(() => {
@@ -28,7 +27,7 @@ export default function Dragon() {
               <a href={info&&info[0].wikipedia} class="u-active-black u-align-center u-border-2 u-border-active-black u-border-grey-75 u-border-hover-black u-btn u-btn-round u-button-style u-hover-black u-none u-radius-10 u-text-active-white u-text-hover-white u-btn-1">Learn more</a>
             </div>
           </div>
-          <img src={info&&info[0].flickr_images[2]} class="u-align-left u-container-style u-image u-image-default u-layout-cell u-size-36 u-image-1" data-image-width="1280" data-image-height="848"/>
+          <img src={info&&info[0].flickr_images[2]} alt="dragon site" class="u-align-left u-container-style u-image u-image-default u-layout-cell u-size-36 u-image-1" data-image-width="1280" data-image-height="848"/>
             
         </div>
       </div>

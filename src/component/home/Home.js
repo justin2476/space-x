@@ -26,7 +26,7 @@ export default function Home() {
           <h6 className="u-text u-text-2">{info&&info.name}</h6>
           <p className="u-text u-text-3">{info&&info.summary}</p>
        
-          <a href={info&&info.links&&info.links.website} className="u-active-palette-1-light-1 u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-radius-11 u-text-palette-1-base u-white u-btn-2" target="_blank">learn more</a>
+          <a href={info&&info.links&&info.links.website} className="u-active-palette-1-light-1 u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-radius-11 u-text-palette-1-base u-white u-btn-2" >learn more</a>
         </div>
       </div>
     </div>

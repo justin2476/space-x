@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import SpacexApi from './../../service/spacex.company.info';
-
+import './Falcon.css'
 
 export default function Falcon() {
     const [info,setInfo]=useState();
@@ -9,7 +9,7 @@ export default function Falcon() {
         var data = await SpacexApi.getFalcon();
    
        setInfo(data.data);
-       console.log(info);
+   
 
       }
     useEffect(() => {
@@ -28,7 +28,7 @@ export default function Falcon() {
               <a href={info&&info.wikipedia} class="u-active-black u-align-center u-border-2 u-border-active-black u-border-grey-75 u-border-hover-black u-btn u-btn-round u-button-style u-hover-black u-none u-radius-10 u-text-active-white u-text-hover-white u-btn-1">Learn more</a>
             </div>
           </div>
-          <img src={info&&info.flickr_images[4]} class="u-align-left u-container-style u-image u-image-default u-layout-cell u-size-36 u-image-1" data-image-width="1280" data-image-height="848"/>
+          <img src={info&&info.flickr_images[4]} alt="dragon site"  class="u-align-left u-container-style u-image u-image-default u-layout-cell u-size-36 u-image-1" data-image-width="1280" data-image-height="848"/>
             
         </div>
       </div>
